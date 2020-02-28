@@ -5,7 +5,7 @@ Newsticker Bundle for Contao CMS
 [![Total Downloads](https://poser.pugx.org/pdir/newsticker-bundle/downloads)](https://packagist.org/packages/pdir/newsticker-bundle)
 [![License](https://poser.pugx.org/pdir/newsticker-bundle/license)](https://packagist.org/packages/pdir/newsticker-bundle)
 
-<img src="https://docs.pdir.de/_images/newsticker/pdir_icon_newsticker.svg" alt="Newsticker Bundle für Contao" style="width:150px;margin-top:10px;">
+<img src="https://docs.pdir.de/_images/newsticker/pdir_icon_newsticker.svg" alt="Newsticker Bundle für Contao" width="150">
 
 The newsticker bundle is a jQuery extension for contao 4 based on 
 [jQuery Easy Ticker](https://github.com/vaakash/jquery-easy-ticker).
