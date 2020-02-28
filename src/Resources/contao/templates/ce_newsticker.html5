@@ -1,0 +1,37 @@
+<li class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+
+    <?php if (!$this->addBefore): ?>
+        <?php if($this->href != ""): ?>
+            <a href="<?= $this->href ?>" class="hyperlink_txt" title="<?= $this->linkTitle ?>"<?= $this->attribute ?>
+            <?= $this->target ?><?= $this->rel ?>>
+        <?php endif; ?>
+
+        <?php if($this->headline): ?>
+            <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+        <?php endif; ?>
+
+        <?= $this->text ?>
+
+        <?php if($this->href != ""): ?></a><?php endif; ?>
+    <?php endif; ?>
+
+    <?php if ($this->addImage): ?>
+        <?php $this->insert('image', $this->arrData); ?>
+    <?php endif; ?>
+
+    <?php if ($this->addBefore): ?>
+        <?php if($this->href != ""): ?>
+            <a href="<?= $this->href ?>" class="hyperlink_txt" title="<?= $this->linkTitle ?>"<?= $this->attribute ?>
+            <?= $this->target ?><?= $this->rel ?>>
+        <?php endif; ?>
+
+        <?php if($this->headline): ?>
+            <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+        <?php endif; ?>
+
+        <?= $this->text ?>
+
+        <?php if($this->href != ""): ?></a><?php endif; ?>
+    <?php endif; ?>
+
+</li>

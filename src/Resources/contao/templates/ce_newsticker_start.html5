@@ -1,0 +1,26 @@
+<div class="<?= $this->class ?> newsticker<?= $this->id ?><?php if($this->showControls != 1): ?> hideControls<?php endif; ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+<ul>
+
+<?php $GLOBALS['TL_CSS'][] = 'bundles/pdirnewsticker/css/newsTicker.scss||static'; ?>
+<?php $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/pdirnewsticker/js/jquery.easy-ticker.min.js'; ?>
+<?php $GLOBALS['TL_BODY'][] = "
+<script>
+jQuery(document).ready(function($) {
+    $('.newsticker".$this->id."').easyTicker({
+        direction: '".$this->direction."',
+        easing: 'swing',
+        speed: ".$this->speed.",
+        interval: ".$this->interval.",
+        height: '".$this->height."',
+        visible: ".$this->visible.",
+        mousePause: ".$this->mousePause.",
+        controls: {
+            up: '.newsticker".$this->id." + .newstickerControls .btnUp',
+            down: '.newsticker".$this->id." + .newstickerControls .btnDown',
+            toggle: '.newsticker".$this->id." + .newstickerControls .btnToggle',
+            playText: 'Abspielen',
+            stopText: 'Pause'
+        }
+    });
+});
+</script>"; ?>

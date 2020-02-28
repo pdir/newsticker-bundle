@@ -1,0 +1,7 @@
+</ul></div>
+
+<div class="newstickerControls">
+    <a href="#" class="btnUp"><?= $GLOBALS['TL_LANG']['MSC']['newsTickerUp'] ?></a>
+    <a href="#" class="btnDown"><?= $GLOBALS['TL_LANG']['MSC']['newsTickerDown'] ?></a>
+    <a href="#" class="btnToggle et-run"><?= $GLOBALS['TL_LANG']['MSC']['newsTickerPlay'] ?> / <?= $GLOBALS['TL_LANG']['MSC']['newsTickerPause'] ?></a>
+</div>

@@ -1,0 +1,49 @@
+.ce_newsTickerStart {
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 15px;
+
+  &.hideControls + .newstickerControls {
+    display: none;
+    margin-bottom: 30px;
+  }
+
+  > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #d0d0d0;
+
+    > li {
+      display: block;
+      padding: 16px 12px;
+      background-color: #fff;
+      border-bottom: 1px solid #d0d0d0;
+      overflow: hidden;
+      width: 100%;
+
+      figure {
+        margin: 0;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.newstickerControls {
+  margin-bottom: 30px;
+
+  > a {
+    padding: 8px 15px;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    display: inline-block;
+  }
+}
