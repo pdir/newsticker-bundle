@@ -27,8 +27,15 @@ System requirements / Systemvoraussetzungen
 * [Contao 4.4](https://github.com/contao/contao-bundle) or higher
 
 
+Demo
+----------------------------
+
+* [Demo](https://demo.pdir.de/newsticker)
+
+
 Installation & Configuration
 ----------------------------
+
 * [Dokumentation](https://docs.pdir.de/#/newsticker/index)
 
 
