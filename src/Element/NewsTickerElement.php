@@ -1,34 +1,48 @@
 <?php
 
+/*
+ * Newsticker bundle for Contao Open Source CMS
+ *
+ * Copyright (c) 2020 pdir / digital agentur // pdir GmbH
+ *
+ * @package    newsticker-bundle
+ * @link       https://pdir.de
+ * @license    LGPL-3.0+
+ * @author     Philipp Seibt <develop@pdir.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Pdir\NewsTickerBundle\Element;
 
+use Contao\BackendTemplate;
+use Contao\FilesModel;
 use Contao\StringUtil;
 use Contao\System;
-use Contao\Config;
-use Contao\FilesModel;
-use Contao\BackendTemplate;
 
 class NewsTickerElement extends \ContentElement
 {
     /**
-     * Template
+     * Template.
+     *
      * @var string
      */
     protected $strTemplate = 'ce_newsticker';
 
     /**
-     * Generate the content element
+     * Generate the content element.
      */
     protected function compile()
     {
-        if(TL_MODE == 'BE') {
+        if (TL_MODE === 'BE') {
             $this->strTemplate = 'be_wildcard';
             $this->Template = new BackendTemplate($this->strTemplate);
             $this->Template->wildcard = '### News Ticker Element ###';
             $this->Template->title = $this->text;
         }
 
-        if($this->newsTicker_customTpl != "") {
+        if ('' !== $this->newsTicker_customTpl) {
             $this->Template->setName($this->newsTicker_customTpl);
         }
 
@@ -38,10 +52,10 @@ class NewsTickerElement extends \ContentElement
         $this->Template->addImage = false;
 
         // Add an image
-        if ($this->addImage && $this->singleSRC != '') {
+        if ($this->addImage && '' !== $this->singleSRC) {
             $objModel = FilesModel::findByUuid($this->singleSRC);
 
-            if ($objModel !== null && is_file(System::getContainer()->getParameter('kernel.project_dir') . '/' . $objModel->path)) {
+            if (null !== $objModel && is_file(System::getContainer()->getParameter('kernel.project_dir').'/'.$objModel->path)) {
                 $this->singleSRC = $objModel->path;
                 $this->addImageToTemplate($this->Template, $this->arrData, null, null, $objModel);
             }

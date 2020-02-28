@@ -1,5 +1,7 @@
 <?php
 
+$date = date('Y');
+
 $header = <<<EOF
 Newsticker bundle for Contao Open Source CMS
 
