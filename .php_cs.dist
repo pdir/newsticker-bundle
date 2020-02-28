@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<EOF
-Animated timeline bundle for Contao Open Source CMS
+Newsticker bundle for Contao Open Source CMS
 
 Copyright (c) $date pdir / digital agentur // pdir GmbH
 
