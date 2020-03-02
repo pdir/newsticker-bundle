@@ -24,7 +24,7 @@ scrollen lassen. Die Elemente können einfach als Content Elemente angelegt werd
 System requirements / Systemvoraussetzungen
 -------------------
 
-* [Contao 4.4](https://github.com/contao/contao-bundle) or higher
+* [Contao 4.4](https://github.com/contao/contao) or higher
 
 
 Demo
