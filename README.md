@@ -53,6 +53,6 @@ GNU Lesser General Public License v3.0
 Screenshots
 -------
 
-![](https://docs.pdir.de/_images/newsticker/newsticker_elemente_backend.png)  
+![](https://docs.pdir.de/_images/newsticker/newsticker_elemente_im_backend.png)  
 
-![](https://docs.pdir.de/_images/newsticker/newsticker_beispiel.png)
+![](https://docs.pdir.de/_images/newsticker/newsticker_beispiele.png)
