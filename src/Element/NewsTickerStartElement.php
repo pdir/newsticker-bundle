@@ -52,6 +52,9 @@ class NewsTickerStartElement extends \ContentElement
         if ('' === $this->newsTicker_interval) {
             $this->newsTicker_interval = '2000';
         }
+        if ('0' === $this->newsTicker_interval) {
+            $this->newsTicker_interval = '99999999';
+        }
         if ('' === $this->newsTicker_height) {
             $this->newsTicker_height = 'auto';
         }
